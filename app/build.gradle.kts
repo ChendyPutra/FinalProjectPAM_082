@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.finalprojectpam"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.finalprojectpam"
@@ -59,6 +59,36 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
+    implementation("androidx.room:room-common:2.6.1")
+    implementation("androidx.room:room-compiler:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.cardview:cardview:1.0.0")
+    // Lifecycle Components
+    implementation ("androidx.lifecycle:lifecycle-livedata:2.4.1")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel:2.4.1")
+    implementation ("androidx.lifecycle:lifecycle-extensions:2.2.0")
+
+    // Room Database
+    implementation ("androidx.room:room-rxjava3:2.4.2")
+    implementation ("androidx.room:room-runtime:2.4.2")
+
+    // Glide
+    implementation ("com.github.bumptech.glide:glide:4.12.0")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("com.google.android.material:material:1.11.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
+
+
+    implementation ("io.reactivex.rxjava3:rxandroid:3.0.0")
+    implementation ("io.reactivex.rxjava3:rxjava:3.0.0")
+
+    // Custom Permission
+    implementation ("com.karumi:dexter:6.2.2")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
